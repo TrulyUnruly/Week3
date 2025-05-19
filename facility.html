@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility</title>
+
+        <!-- link bootstrap node modules into html file  -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+        <!-- link css to html file -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+        <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">The Gilded Paw</a>
+        
+        <!-- "HAMBURGER BUTTON" -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- unordered list (links on navbar)-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="facility.html">Facility</a>
+            </li>  
+        </ul>
+
+        <!-- SEARCH BAR/BUTTON -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        </div>
+
+    </div>
+    </nav>
+
+        <!-- TABLE -->
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Suite Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">Max Capacity</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+        <!-- First column is the suite name -->
+      <td>The Sapphire Suite: precious elegance</td>
+        <!-- Second column is the description -->
+      <td>Comfortable and well-appointed private space. Quality bedding and a refined atmosphere.</td>
+        <!-- Third column is the Max capacity of the room -->
+      <td>Single Occupancy</td>
+    </tr>
+    <tr>
+      <td>The Emerald Estate: high value spaciousness</td>
+      <td>Larger, more expansive room with additional amenities and a sense of grandeur.</td>
+      <td>Double Occupancy</td>
+    </tr>
+    <tr>
+      <td>The Diamond Penthouse: highest level of luxury and exclusivity</td>
+      <td>Most premium and private accommodation with top-tier amenities. Enhanced views, dedicated play areas within the suite and extra personalized attention.</td>
+      <td>Multiple Occupancy (families only)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CARDS -->
+        <!-- using a grid container that is responsive when screen gets larger or smaller -->
+         <!-- the container has a bottom margin (mb) of 5 and font size (fs) of 2 -->
+         <!-- rows have a gutter of 3 a margin of 5 and top padding (pt) of 5 -->
+        <div class="container  mb-5 fs-2">
+        <div class="row g-3 m-5 pt-5">
+
+        <!-- columns are "small" size with height of 100 (card height) and a large shadow applied -->
+         <!-- image at top of card with rounded corners and width of 100 -->       
+         <div class="col-sm">
+           <div class="card-1 h-100 shadow-lg">
+              <img src="images/MaincoonBoard.jpg"
+              class="rounded card-img-top" 
+              alt="Maincoon Cat in The Sapphire Suite"
+              width="100"/>
+        <!-- the body of card contains the title/heading with padding of 1 of the card and text which is left aligned (by default) padding of 2 and font size 6 -->
+              <div class="card-body">
+                <h5 class="card-title p-1">The Sapphire Suite</h5>
+                <p class="card-text p-2 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui, enim nulla exercitationem modi asperiores aspernatur cumque quam laboriosam molestiae error non quis minima. Voluptatum, tenetur? Adipisci, impedit corrupti. Quos?</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm">
+            <div class="card-2 h-100 shadow-lg">
+               <img src="images/DevonRexBoard.jpg" 
+               class="rounded card-img-top" 
+               alt="Devon Rex cat in The Emerald Estate"
+               width="100"/>
+               <div class="card-body">
+                  <h5 class="card-title p-1">The Emerald Estate</h5>
+                  <p class="card-text p-2 fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel rerum alias magnam culpa eos aut, inventore, nam veniam aperiam non ipsa excepturi necessitatibus id aliquid tempore cupiditate est.</p>
+             </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card-3 mb-3 h-100 shadow-lg">
+               <img src="images/SphynxBoard.jpg" 
+               class="rounded card-img-top" 
+               alt="Sphynx cat in The Diamond Penthouse"
+               width="100"/>
+               <div class="card-body">
+                  <h5 class="card-title p-1">The Diamond Penthouse</h5>
+                  <p class="card-text p-2 fs-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium dolor explicabo voluptatum? Repellat voluptatibus officiis enim id. Hic, officia inventore esse alias expedita, debitis quisquam nostrum magni autem nihil nemo.</p>
+             </div>
+            </div>
+        </div> 
+
+      </div>
+     </div>
+
+     <!-- FOOTER -->
+      <!-- footer with padding 5 top and bottom -->
+        <footer class="pt-5 pb-5">
+         <div class="text-center p-2">
+           <h5>The Gilded Paw Feline Resort copyrighted 2025</h5>
+         </div>
+        </footer>
+    
+        <!-- link bootstrap JavaScript to html file (*could use .min.js which makes smaller by eliminating space)-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+</body>
+</html>

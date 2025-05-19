@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Add my name as creator -->
+    <meta name="author" content="Julie Lewis">
+
+        <!-- Title of Project -->
+    <title>Week 3 Bootstrap Project</title>
+
+        <!-- link bootstrap node modules into html file  -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+        <!-- link css to html file -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+        <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+       
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">The Gilded Paw</a>
+        
+        <!-- "HAMBURGER BUTTON" -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- unordered list (links on navbar)-->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="facility.html">Facility</a>
+            </li>  
+        </ul>
+
+        <!-- SEARCH BAR/BUTTON -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+     </div>
+
+    </div>
+    </nav>
+
+        <!-- HERO -->
+         <div>
+            <!-- Banner image that spans 100% width of screen, img-fluid allows image to be resized as screen gets larger or smaller -->
+            <img class="img-fluid" src="images/BannerImageLong.jpg" width=100%
+            alt="The Gilded Paw Luxury Feline Resort">
+         </div>
+
+        <!-- WELCOME -->
+         <!-- centered text with 1px padding and centered text with 5px padding and font size of 5 -->
+        <h1 class="text-center p-1">The Gilded Paw: A Sanctuary of Elegance for Discerning Felines</h1> 
+        <p class="text-center p-5 fs-5">Welcome to The Gilded Paw, where unparalleled luxury meets the delicate grace of your beloved feline companion.</p>
+        <!-- centered text with 3px padding and centered text with margin of 3 and font size of 2 -->
+        <h3 class="text-center p-3">Indulge Your Cherished Companion in Unrivaled Comfort and Sophistication.</h3>
+        <p class="text-left m-3 p-2">At The Gilded Paw, we understand that your cat is more than just a pet; they are a cherished member of your family. That's why we've meticulously crafted an exclusive retreat that transcends traditional boarding, offering a haven of refined comfort and personalized attention.</p>
+        <p class="text-left m-3 p-2">From the moment your feline guest steps paw into our exquisitely appointed facility, they will be enveloped in an atmosphere of tranquility and opulence. We believe that every detail matters, from the plush, designer bedding in our private suites to the gentle melodies that soothe their senses.</p>
+        
+        <!-- CARDS -->
+        
+        <!-- using a grid container that is responsive when screen gets larger or smaller -->
+         <!-- the container has a bottom margin (mb) of 5 and font size (fs) of 2 -->
+         <!-- rows have a gutter of 3 a margin of 5 and top padding (pt) of 5 -->
+        <div class="container  mb-5 fs-2">
+        <div class="row g-3 m-5 pt-5">
+
+            <!-- columns are "small" size with height of 100 (card height) and a large shadow applied -->
+             <!-- image at top of card with rounded corners and width of 100 -->
+         <div class="col-sm">
+           <div class="card-1 h-100 shadow-lg">
+              <img src="images/Exercise.jpg" 
+              class="rounded card-img-top" 
+              alt="Exercise space for play"
+              width="100"/>
+              <!-- the body of card contains the title/heading with padding of 1 of the card and text which is left aligned (by default) padding of 2 and font size 6 -->
+              <div class="card-body">
+                <h5 class="card-title p-1">Play</h5>
+                <p class="card-text p-2 fs-6">We believe in stimulating both the mind and body. Our thoughtfully designed spaces offer opportunities for gentle play, exploration, and serene relaxation.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm">
+            <div class="card-2 h-100 shadow-lg">
+               <img src="images/Dine.jpg" 
+               class="rounded card-img-top" 
+               alt="Dining"
+               width="100"/>
+               <div class="card-body">
+                  <h5 class="card-title p-1">Eat</h5>
+                  <p class="card-text p-2 fs-6">We offer a selection of premium, gourmet meals, catering to even the most discerning palates. Special dietary requirements are handled with meticulous care.</p>
+             </div>
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="card-3 mb-3 h-100 shadow-lg">
+               <img src="images/Rest.jpg" 
+               class="rounded card-img-top" 
+               alt="Resort Room"
+               width="100"/>
+               <div class="card-body">
+                  <h5 class="card-title p-1">Rest</h5>
+                  <p class="card-text p-2 fs-6">Discover our range of sumptuously designed suites, each offering ample space, natural light, and elegant furnishings. Choose from our Sapphire Suites, Emerald Estates, or the ultimate indulgence of our Diamond Penthouses, each tailored to provide the utmost comfort and privacy.</p>
+             </div>
+            </div>
+        </div> 
+
+      </div>
+     </div>
+
+
+        
+
+        <!-- CONTACT FORM -->
+         <!-- Heading top margin (mt) of 5 and top padding (pt) of 5 -->
+         <!-- Heading bottom margin (mb) of 4 --> 
+     <h1 class="text-center mt-5 pt-5">Contact Us</h1>
+     <h2 class="text-center mb-4">For more information on reservations</h2>
+
+    <div class "container">
+        <!-- container row with gutter of 3, bottom margin 5 side margin 3 end margin 3 and padding of 5 -->
+    <form class="row g-3 mb-5 ms-3 me-3 p-5">
+        <!-- column medium each size 6 (to total 12)- to hold first name and last last name -->
+        <div class="col-md-6">
+        <label for="firstname" class="form-label">First name</label>
+        <input type="text" class="form-control"  aria-label="First name" id="firstname">
+      </div>
+      <div class="col-md-6">
+        <label for="lastname" class="form-label">Last name</label>
+        <input type="text" class="form-control"  aria-label="Last name" id="lastname">
+      </div>
+    
+        <!-- column medium size 12 (because there is only 1 column)- to hold email -->
+    <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+    </div>
+        <!-- column medium size 12 (because there is only 1 column)- to hold address 1-->
+    <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+        <!-- column medium size 12 (because there is only 1 column)- to hold address 2 -->
+    <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+        <!-- column medium size 6 to hold City, size 4 to hold State (with drop down), size 2 to hold zip (for total of 12) -->
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+    </div>
+    <!-- column medium size 12 (because there is only 1 column)- submit button -->
+    <div class="col-12">
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+    </div>
+
+        <!-- FOOTER -->
+         <!-- footer with padding 5 top and bottom -->
+        <footer class="pt-5 pb-5">
+         <div class="text-center p-2">
+           <h5>The Gilded Paw Feline Resort copyrighted 2025</h5>
+         </div>
+        </footer>
+
+        <!-- link bootstrap JavaScript to html file (*could use .min.js which makes smaller by eliminating space)-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+</body>
+</html>
